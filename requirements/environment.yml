@@ -1,0 +1,12 @@
+name: .venv   # Name of the environment
+channels:
+  - conda-forge        # Prefer conda-forge for newer packages
+  - defaults
+
+dependencies:
+  - python=3.12        # Specify Python version
+  - typer              # Install Typer as a dependency
+  - pytest             # Install Pytest for testing
+  - pip                # Add pip in case you want to install pip packages later
+  - pydantic
+  - jupyterlab
