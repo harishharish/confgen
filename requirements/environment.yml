@@ -10,3 +10,5 @@ dependencies:
   - pip                # Add pip in case you want to install pip packages later
   - pydantic
   - jupyterlab
+  - xtb
+  - py3dmol

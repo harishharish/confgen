@@ -26,11 +26,18 @@ if [ -f "$SCRIPT_DIR/requirements/environment.yml" ]; then
     echo "Creating environment: $ENV_PATH using $SCRIPT_DIR/requirements/environment.yml"
     conda env create -p "$ENV_PATH" -f "$SCRIPT_DIR/requirements/environment.yml"
 
+
+    # Initialize Conda for the current shell if needed
+    echo "Initializing Conda for the current shell..."
+    eval "$(conda shell.bash hook)"
+
     # # Step 2: Activate the environment and install pip
     # echo "Activating environment and installing pip..."
     conda activate $ENV_PATH
 
-    # pip install --editable .
+    pip install -r "$SCRIPT_DIR/requirements/requirements.txt"
+
+    pip install --editable .
     
 else
     echo "Error: environment.yml not found in the script's directory!"
