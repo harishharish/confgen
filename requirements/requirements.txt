@@ -1,3 +1,5 @@
+matplotlib
+seaborn
 rdkit
 pandas
 jsme-notebook

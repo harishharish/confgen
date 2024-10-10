@@ -30,11 +30,11 @@
 
 # `confgen`
 
-A Python package for stuff.
+Conformere Generation and Refinement Tool
 
 ## Overview
 
-Quick overview...
+ConfGen package use RDKit for conformer generation and xTB for energy based conformer refinement.  
 
 ## Features
 
@@ -47,6 +47,20 @@ request for wanted features and suggestions!
 
 ## Quick start
 
+- Clone repo from [github](https://github.com/harishharish/confgen).
+- change directory to repo root. (cd confgen/)
+- Checkout a branch of interest. (git checkout "name of interest")
+- Create python virtual env;
+  - Grant execution permission to init_conda_venv.sh bash script, command: ```chmod +x init_conda_venv.sh```
+  - Run init_conda_venv.sh, command: ```./init_conda_venv.sh```
+  - This will create conda based virtual enviroment (.venv/)
+  - Activate conda environment, command: ```conda activate "name of virtual environment"```
+  - "name of virtual environment" is whole absolute path of virtual environment folder. It can be also be found using ```conda env list``` command.
+- Launch jupyter lab, command: ```jupyter lab```
+- Open examples/usage/demo.ipynb 
+
+
+<!-- 
 Use one of the following
 
 ```bash
@@ -57,7 +71,7 @@ or
 
 ```bash
 conda install -c harishharish confgen
-```
+``` -->
 
 ## Example usage
 
