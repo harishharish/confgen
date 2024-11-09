@@ -12,4 +12,3 @@ dependencies:
   - jupyterlab
   - xtb
   - py3dmol
-  - pandas
